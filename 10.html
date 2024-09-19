@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Images with Srcset</h1>
+    </header>
+
+    <section class="image-container">
+        <h2>Beautiful Landscape</h2>
+
+        <!-- Responsive Image -->
+        <img 
+            src="images/landscape-large.jpg" 
+            srcset="images/landscape-small.jpg 480w, 
+                    images/landscape-medium.jpg 768w,
+                    images/landscape-large.jpg 1200w"
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+            alt="A beautiful landscape">
+    </section>
+
+</body>
+</html>

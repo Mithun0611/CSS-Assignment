@@ -1,0 +1,39 @@
+/* Element Selector */
+p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Class Selector */
+.title {
+    color: #2a9d8f;
+    text-transform: uppercase;
+}
+
+/* ID Selector */
+#external-link {
+    color: #e76f51;
+    text-decoration: none;
+}
+
+#external-link:hover {
+    text-decoration: underline;
+}
+
+/* Attribute Selector */
+a[target="_blank"] {
+    font-style: italic;
+}
+
+/* Pseudo-class Selector */
+a:hover {
+    color: #264653;
+}
+
+/* Pseudo-element Selector */
+p::first-letter {
+    font-size: 24px;
+    color: #e63946;
+    font-weight: bold;
+}

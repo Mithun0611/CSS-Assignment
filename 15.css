@@ -1,0 +1,76 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Container for transform examples */
+.transform-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Styling for boxes */
+.box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #e74c3c;
+    transition: transform 0.5s ease;
+}
+
+/* Transform effects */
+.box1 {
+    background-color: #e74c3c;
+    transform: translateX(50px); /* Moves the box 50px to the right */
+}
+
+.box2 {
+    background-color: #2ecc71;
+    transform: rotate(45deg); /* Rotates the box by 45 degrees */
+}
+
+.box3 {
+    background-color: #3498db;
+    transform: scale(1.5); /* Scales the box to 150% of its original size */
+}
+
+.box4 {
+    background-color: #f39c12;
+    transform: skewX(20deg); /* Skews the box 20 degrees along the X-axis */
+}
+
+.box5 {
+    background-color: #9b59b6;
+    transform: translateX(50px) rotate(45deg) scale(1.5) skewX(20deg); /* Combines all transforms */
+}

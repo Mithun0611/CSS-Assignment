@@ -1,0 +1,114 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Container for animation examples */
+.animation-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Styling for boxes */
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px;
+    position: relative;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.box1 {
+    background-color: #e74c3c;
+    animation: bounce 1s ease infinite;
+}
+
+/* Fade animation */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.box2 {
+    background-color: #2ecc71;
+    animation: fade 2s ease-in-out 1s infinite;
+}
+
+/* Slide animation */
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.box3 {
+    background-color: #3498db;
+    animation: slide 3s ease-in-out 0s infinite;
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box4 {
+    background-color: #f39c12;
+    animation: spin 4s linear infinite;
+}

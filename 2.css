@@ -1,0 +1,67 @@
+/* Basic Colors */
+body {
+    font-family: Arial, sans-serif;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Color property for headings */
+h1 {
+    color: #2980b9;
+}
+
+h2 {
+    color: #e74c3c;
+}
+
+/* Gradient Background */
+.gradient-section {
+    padding: 20px;
+    background: linear-gradient(45deg, #6dd5ed, #2193b0);
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Background Image */
+.image-section {
+    padding: 50px;
+    background-image: url('https://via.placeholder.com/800x600');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Footer with Solid Background Color */
+.footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Background Repeat Example */
+.image-section-repeated {
+    padding: 50px;
+    background-image: url('https://via.placeholder.com/150');
+    background-repeat: repeat;
+    background-color: #bdc3c7;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Background Position Example */
+.image-section-positioned {
+    padding: 50px;
+    background-image: url('https://via.placeholder.com/800x600');
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #2c3e50;
+    text-align: center;
+}
